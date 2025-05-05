@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "qtadvanceddocking/DockManager.h"
+#include "Log/cdockmessages.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +22,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    ads::CDockManager *m_DockManager;
+    CDockMessages *m_dockMessages;
+
+
 };
 #endif // MAINWINDOW_H

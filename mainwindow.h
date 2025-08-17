@@ -25,6 +25,8 @@ private:
     ads::CDockManager *m_DockManager;
     CDockMessages *m_dockMessages;
 
+    QString loadStyleSheet(const QString &fileName);
+
 
 };
 #endif // MAINWINDOW_H
